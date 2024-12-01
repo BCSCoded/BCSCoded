@@ -16,42 +16,39 @@ function toggleList(listName) {
 }
 
 function updateContentDisplay(fileName){
+
     const contentDisplay = document.getElementById("contentDisplay");
     const contentDisplayTitle = document.getElementById("contentDisplayTitle");
     
     //Returns the Folder name of the project from the onclick pass.
-    const newTitle = String(fileName).slice(fileName.indexOf("/") + 1, fileName.lastIndexOf("/")); 
-    
+    let directoryTitle = String(fileName).slice(fileName.indexOf("/") + 1);
+    let newTitle = directoryTitle.slice(directoryTitle.indexOf("/") + 1, directoryTitle.lastIndexOf("/"));
+    directoryTitle.slice(directoryTitle.lastIndexOf("/"));
+
     //Capitalizes first letter of folder name and updates contentDisplayTitle.
     contentDisplayTitle.textContent = newTitle.charAt(0).toUpperCase() + String(newTitle).slice(1);
-    contentDisplay.src = `projects/software/${fileName}.html`; //Changes source to proper selection of treestyle menu.
+    contentDisplay.src = `projects/${fileName}.html`; //Changes source to proper selection of treestyle menu.
     
-
-    // console.log(newTitle);
-    // console.log(contentDisplay);
-    // console.log(contentDisplayTitle.textContent);
-
 }
-//.charAt(0).toUpperCase() + String(newTitle).slice(1);
-function previousProjectButton(){
+// function previousProjectButton(){
 
-}
+// }
 
-function nextProjectButton(){
+// function nextProjectButton(){
 
-}
+// }
 
 const portfolioHamMenu = document.querySelector('.contentHamburgerMenu');
 const menuTableOfContents = document.querySelector(`.menuTableOfContents`);
 const contentsDisplayContainer = document.querySelector(`.contentsDisplayContainer`);
-const prevNextSelectors = document.getElementById(`prevNextSelectors`);
+// const prevNextSelectors = document.getElementById(`prevNextSelectors`);
 const contentDisplayTitle = document.getElementById(`contentDisplayTitle`);
 
 portfolioHamMenu.addEventListener("click", () => {
     portfolioHamMenu.classList.toggle('active');
     menuTableOfContents.classList.toggle('active');
     contentsDisplayContainer.classList.toggle('active');
-    prevNextSelectors.classList.toggle('active');
+    // prevNextSelectors.classList.toggle('active');
     contentDisplayTitle.classList.toggle('active');
 })
 
@@ -59,6 +56,6 @@ document.querySelectorAll(".nestedList").forEach(interact => interact.addEventLi
     portfolioHamMenu.classList.toggle('active');
     menuTableOfContents.classList.toggle('active');
     contentsDisplayContainer.classList.toggle('active');
-    prevNextSelectors.classList.toggle('active');
+    // prevNextSelectors.classList.toggle('active');
     contentDisplayTitle.classList.toggle('active');
 }))
