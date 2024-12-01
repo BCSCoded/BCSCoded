@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+}
+#pokemonName{
+    font-size: 3rem;
+    width: 475px;
+    border: none;
+    border-radius: 13px;
+    margin-bottom: 10px;
+}
+
+#fetchPokemonButton{
+    width: 475px;
+    font-size: 3rem;
+    border: 3px solid;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+#pokemonSprite{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}

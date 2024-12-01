@@ -1,0 +1,50 @@
+
+/* Core styles */
+* {
+    align-content: center;
+    text-align: center;
+}
+html{
+    padding: 0px;
+}
+/* Counter Style */
+#countID {
+    text-align: center;
+    font-size: 10em;
+    color: #333;
+}
+
+
+/* Button Styles and Hovers */
+.button {
+    border: 2px solid black;
+    border-radius: 15%;
+    padding: 4px 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#decrease {
+    background-color: #97171780;
+    color: #111;
+}
+#decrease:hover {
+    background-color: #971717;
+}
+
+#reset {
+    background-color: #999;
+    color: #111;
+}
+#reset:hover{
+    background-color: #777;
+}
+
+#increase {
+    background-color: #3335c580;
+    color: #111;
+}
+#increase:hover {
+    background-color: #3335c5;
+}

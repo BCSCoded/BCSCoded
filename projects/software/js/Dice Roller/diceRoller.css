@@ -1,0 +1,35 @@
+#diceContainer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2rem; /*em is font size relitive to parent, rem is rekutive to the root*/
+    font-weight: bold;
+}
+
+.rollDiceButton{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #7ccc83;
+    color: rgb(88, 86, 86);
+    font-weight: bold;
+    cursor: pointer;
+}
+.rollDiceButton:hover{
+    background-color: #7ccc8390;
+}
+.diceRollerImput{ /* #diceContainer didn't effect this class? */
+    font-size: 2rem; 
+    width: 9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#diceResult{
+    margin: 25px;
+}
+
+#diceResultImage img{
+    width: 150px;
+    margin: 15px;
+}

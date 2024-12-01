@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1 class="portfolioHeading" id="calculatorHeader">Calculator</h1>
+
+
+    <div id="calculator">
+       
+        <input id="calculatorDisplay" readonly>
+        
+        <div id="calculatorControls">
+
+            <button class="functionButton" id="addButton" onclick="appendToDisplay(`+`)">+</button>
+            <button id="1Button" onclick="appendToDisplay(`1`)">1</button>
+            <button id="2Button" onclick="appendToDisplay(`2`)">2</button>
+            <button id="3Button" onclick="appendToDisplay(`3`)">3</button>
+            <button class="functionButton" id="subtractButton" onclick="appendToDisplay(`-`)">-</button>
+            <button id="4Button" onclick="appendToDisplay(`4`)">4</button>
+            <button id="5Button" onclick="appendToDisplay(`5`)">5</button>
+            <button id="6Button" onclick="appendToDisplay(`6`)">6</button>
+            <button class="functionButton" id="multiplyButton" onclick="appendToDisplay(`*`)">*</button>
+            <button id="7Button" onclick="appendToDisplay(`7`)">7</button>
+            <button id="8Button" onclick="appendToDisplay(`8`)">8</button>
+            <button id="9Button" onclick="appendToDisplay(`9`)">9</button>
+            <button class="functionButton" id="divideButton" onclick="appendToDisplay(`/`)">/</button>
+            <button id="decimalButton" onclick="appendToDisplay(`.`)">.</button>
+            <button id="0Button" onclick="appendToDisplay(`0`)">0</button>
+            <button id="equalsButton" onclick="calculate()">=</button>
+            <!--
+            <button class="functionButton" id="squaredButton" onclick="appendToDisplay(`&#8730`)">&#8730</button>
+            <button class="functionButton" id="exponentButton" onclick="appendToDisplay(`^`)">^</button> 
+            <button id="blankButton"></button>
+             -->
+            <button class="functionButton" id="cButton" onclick="clearDisplay()">C</button>
+
+        </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

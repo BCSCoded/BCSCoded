@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="diceRoller.css">
+</head>
+<body>
+    <div id="diceContainer">
+        <h1>Dice Roller</h1>
+        <label>Number of Dice</label>
+        <input class="diceRollerImput" id="numOfDice" type ="number" value = "1" min = "1">
+        <button class="rollDiceButton"onclick="rollDice()">Roll Dice</button>
+
+
+        <div id="diceResult"></div>
+        <div id="diceResultImage"></div>
+    </div>
+
+    <script src="diceRoller.js"></script>
+    <!-- Dice Icon Image Source: https://game-icons.net/ -->
+    <!-- Things to add in future:
+         Total Dice Number
+         Other Types of Dice
+         More Cosmetic Changes
+         History Log
+         Clear History on Refresh
+         -->
+</body>
+</html>

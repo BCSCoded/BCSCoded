@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    /* background-color: bisque; */
+}
+
+#clock-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6vh;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    margin-top: 25px;
+
+}
+
+.clock{
+    font-family: monospace;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: center;
+    backdrop-filter: blur(30px);
+    background-color: #88888850;
+    width: 600px;
+    border-radius: 25%;
+}
+
+@media screen and (max-width: 600px) {
+    .clock{
+        font-size: 3.5rem;
+        width: 400px;
+    }
+  }

@@ -1,0 +1,70 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rpsH1{
+    display: none;
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 20%);
+}
+.choiceContainer{
+    margin-bottom: 30px; 
+}
+.controlButton{
+    min-width: 80px;
+    margin: 0 10px;
+    border-radius: 15px;
+    background-color: hsl(0, 75%, 13%);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.controlButton:hover{
+    background-color: hsl(234, 75%, 60%); ;
+}
+.buttonImage{
+    width: auto;
+    height: 200px;
+    margin: 5px;
+}
+
+#playerDisplay, #computerDisplay{
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+#resultDisplay{
+    font-size: 5rem;
+    margin: 30px 0;
+}
+
+.scoreDisplay{
+    font-size: 2rem;
+}
+
+.winText, #playerScoreDisplay{
+    color: hsl(120, 42%, 50%);
+}
+
+.loseText, #computerScoreDisplay{
+    color: hsl(0, 70%, 35%);
+}
+
+@media screen and (max-width: 750px){
+    .buttonImage{
+        width: auto;
+        height: 100px;
+        margin: 3px;
+    }
+}
+@media screen and (max-width: 450px){
+    .buttonImage{
+        width: auto;
+        height: 75px;
+        margin: 3px;
+    }
+}
