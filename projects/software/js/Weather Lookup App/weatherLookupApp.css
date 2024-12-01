@@ -77,3 +77,47 @@
     font-size: 2.5rem;
     color: hsla(0, 0%, 0%, 0.75);
 }
+
+@media screen and (max-width: 900px) {
+    #weatherContainer{
+        height: 80vh;
+    }
+    .weatherForm{
+        margin: 20px;
+    }
+    #cityInput, #zipcodeInput{
+        font-size: 1.0rem;
+        font-weight: bold;
+        width: 200px;
+    }
+    #weatherForm button[type="submit"]{
+        padding: 10px 20px;
+        font-weight: bold;
+        font-size: 1.0rem;
+    }
+    .weatherCard{
+        padding: 40px 10px;
+        min-width: none;
+        width: 150px;
+        max-width: 150px;
+    }
+    .weatherCard h1{
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+    }
+    .weatherCard p{
+        font-size: 1.0rem;
+        margin: 5px 0;
+    }
+    .weatherEmojiDisplay{
+        margin-bottom: -30px;
+        height: 6rem;
+        width: auto;
+        padding-bottom: 0;
+    }
+    .errorDisplay{
+        font-size: 1.5rem;
+        color: hsla(0, 0%, 0%, 0.75);
+    }
+}

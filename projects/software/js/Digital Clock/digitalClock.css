@@ -9,7 +9,7 @@ body {
     row-gap: 6vh;
     /* justify-content: center; */
     align-items: center;
-    height: 100vh;
+    height: 87vh;
     margin-top: 25px;
 
 }
@@ -29,5 +29,11 @@ body {
     .clock{
         font-size: 3.5rem;
         width: 400px;
+    }
+  }
+@media screen and (max-width: 400px) {
+    .clock{
+        font-size: 2rem;
+        width: 300px;
     }
   }

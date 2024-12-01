@@ -3,6 +3,7 @@ body{
 }
 #pokemonName{
     font-size: 3rem;
+    text-align: center;
     width: 475px;
     border: none;
     border-radius: 13px;
@@ -21,4 +22,29 @@ body{
     width: 300px;
     height: 300px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+    #pokemonName{
+        font-size: 1.8rem;
+        text-align: center;
+        width: 300px;
+        border: none;
+        border-radius: 13px;
+        margin-bottom: 10px;
+    }
+    
+    #fetchPokemonButton{
+        width: 300px;
+        font-size: 2rem;
+        border: 3px solid;
+        border-radius: 13px;
+        cursor: pointer;
+    }
+    
+    #pokemonSprite{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
 }

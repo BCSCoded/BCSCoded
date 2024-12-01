@@ -40,3 +40,13 @@ img.displaySlide{
     from {opacity: .5}
     to {opacity: 1}
 }
+
+@media screen and (max-width: 900px) {
+    .slider{
+        width: 250px;
+    }
+    .slider button{
+        padding: 10px;
+        font-size: 2rem;
+    }
+}

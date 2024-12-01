@@ -5,6 +5,10 @@
     font-weight: bold;
 }
 
+#diceRollerTitle{
+    display: none;
+}
+
 .rollDiceButton{
     font-size: 1.5rem;
     padding: 10px 15px;
@@ -32,4 +36,15 @@
 #diceResultImage img{
     width: 150px;
     margin: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    
+    #diceResult{
+        margin: 10px;
+    }
+    #diceResultImage img{
+        width: 50px;
+        margin: 5px;
+    }
 }

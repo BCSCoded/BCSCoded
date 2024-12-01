@@ -60,11 +60,24 @@ body{
         height: 100px;
         margin: 3px;
     }
+    #playerDisplay, #computerDisplay{
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+    
+    #resultDisplay{
+        font-size: 3rem;
+        margin: 30px 0;
+    }
+    
+    .scoreDisplay{
+        font-size: 2rem;
+    }
 }
 @media screen and (max-width: 450px){
     .buttonImage{
         width: auto;
-        height: 75px;
+        height: 50px;
         margin: 3px;
     }
 }

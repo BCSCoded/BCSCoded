@@ -357,15 +357,15 @@ h3 {
     border-radius: 15px;
 }
 #contentDisplayTitle{
-    font-size: 3.5rem;
-    text-decoration: underline 5px;
+    font-size: 2.0rem;
+    text-decoration: underline 3px;
     margin: 2vh;
 }
 #contentDisplay{
     align-content: center;
     flex-grow: 8;
     padding: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* #prevNextSelectors{
     display: flex;
@@ -426,6 +426,10 @@ h3 {
         display: block;
         position: right;
         margin-right: 10px;
+    }
+    #contentDisplayTitle{
+        font-size: 2rem;
+        margin-top: 2rem;
     }
 
   }

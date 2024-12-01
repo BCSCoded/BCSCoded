@@ -30,13 +30,7 @@ function updateContentDisplay(fileName){
     contentDisplay.src = `projects/${fileName}.html`; //Changes source to proper selection of treestyle menu.
     
 }
-// function previousProjectButton(){
 
-// }
-
-// function nextProjectButton(){
-
-// }
 
 const portfolioHamMenu = document.querySelector('.contentHamburgerMenu');
 const menuTableOfContents = document.querySelector(`.menuTableOfContents`);
